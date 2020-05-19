@@ -13,7 +13,7 @@ const PostItem = ({ post }) => {
             <div className="card-body">
                 <h2>
                     <Link href="/posts/[id]" as={`/posts/${post.id}`}>
-                        {post.title}
+                        <a>{post.title}</a>
                     </Link>
                 </h2>
                 <p className="card-subtitle">
